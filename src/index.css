@@ -1,13 +1,142 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
 }
+
+/*///////  NavBar ////////*/
+.Navbar{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #F55A5A;
+  font-weight: 500;
+  font-family: Inter ,sans-serif ;
+  padding: 2em;
+
+  color: white;
+}
+.worldlogo{
+  display: block;
+  width:70px;
+  padding-right:  1em ;
+  
+
+  
+}
+.location{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*///////  Main ////////*/
+
+/*///////  Typography ////////*/
+.titles{
+  font-size: 1.5625rem;
+  color:#2B283A;
+
+}
+.date,.description{
+  color:#918E9B;
+
+}
+.location{
+  color:#2B283A;
+}
+
+
+
+/*///////  Layout ////////*/
+.place.cards{
+  display: flex;
+  flex-direction: column;
+}
+.place-image{
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+.view{
+  
+
+width: 106px;
+font-family: 'Inter';
+font-weight: 400;
+font-size: 10.24px;
+line-height: 12px;
+
+
+text-decoration-line: underline;
+
+color: #918E9B;
+}
+.description {
+  margin-top: 1em;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.titles{
+
+  font-size: 2rem;
+  
+}
+.date{
+  margin-top: 0.5em;
+}
+.places-cards{
+  padding-left: 1em;
+}
+.all{border-bottom: 1px solid #F5F5F5;
+margin-bottom: 2em;
+margin-top: 2em;}
+@media (min-width:600px){
+.place-image{
+  width: 400px;
+  height: 600px;
+  border-radius: 16px;
+  }
+.location{
+  display: flex;
+  margin-top: 7em;
+  margin-bottom: 2em;
+}
+.all{
+  display: flex;
+
+  padding: 1em;
+  margin-bottom: 5em;
+  border-bottom: 1px solid #F5F5F5;
+  
+}
+.info{
+  display: flex;
+  margin-top: 4em;
+  width: 80%;
+  flex-direction: column;
+  margin: 2em;
+  
+
+}
+.titles{
+  font-size:4rem;
+}
+.location{
+  font-size: 1.5rem
+}
+.description{
+  font-size: 1.5rem
+}
+.view{
+  display: block;  
+  font-size: 0.6rem;
+  width: 100px;
+  
+
+}
+}
+;
